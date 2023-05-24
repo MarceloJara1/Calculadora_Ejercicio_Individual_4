@@ -16,7 +16,7 @@ La clase MainActivity la cual ejecuta la aplicacion, envia los valores ingresado
 
 ScreenShot
 
-![image](https://github.com/MarceloJara1/Calculadora_Ejercicio_Individual_4/assets/107599490/bb2af96e-5469-4781-a564-59c8761ac2bc)
 
 
+![screenshot](https://github.com/MarceloJara1/Calculadora_Ejercicio_Individual_4/assets/107599490/8329b2d2-fac2-415a-909f-95c2d742d74f)
 
