@@ -4,9 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonRestar;
     private Button buttonMultiplicar;
     private Button buttonDividir;
+    private TextView txtResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         buttonRestar = (Button)findViewById(R.id.buttonRes);
         buttonMultiplicar = (Button)findViewById(R.id.buttonMul);
         buttonDividir = (Button) findViewById(R.id.buttonDiv);
-
+        txtResultado = (TextView) findViewById(R.id.txtResultado);
         //Crear instancia en la clase calculadora
         calc = new calculadora(numero_1, numero_2);
 
@@ -48,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //Realizamos la operacion y mostramos el resultado
                     int resultado = calc.sumar();
-                    Toast.makeText(MainActivity.this, "El resultado de la suma es: " + resultado, Toast.LENGTH_SHORT).show();
+                    txtResultado.setText(numero1+" + "+numero2+" = "+resultado);
                 }else {
                     Toast.makeText(MainActivity.this, "Por favor, ingrese los dos números", Toast.LENGTH_SHORT).show();
                 }
@@ -64,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     int numero2 = calc.obtenerNumero2();
 
                     int resultado = calc.restar();
-                    Toast.makeText(MainActivity.this, "El resultado de la resta es: " + resultado, Toast.LENGTH_SHORT).show();
+                    txtResultado.setText(numero1+" - "+numero2+" = "+resultado);
                 }else {
                     Toast.makeText(MainActivity.this, "Por favor, ingrese los dos números", Toast.LENGTH_SHORT).show();
                 }
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                     int numero2 = calc.obtenerNumero2();
 
                     int resultado = calc.multiplicar();
-                    Toast.makeText(MainActivity.this, "El resultado de la multiplicación es: " + resultado, Toast.LENGTH_SHORT).show();
+                    txtResultado.setText(numero1+" * "+numero2+" = "+resultado);
                 }else {
                         Toast.makeText(MainActivity.this, "Por favor, ingrese los dos números", Toast.LENGTH_SHORT).show();
                     }
@@ -97,7 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
                     try {
                         double resultado = calc.dividir();
-                        Toast.makeText(MainActivity.this, "El resultado de la división es: " + resultado, Toast.LENGTH_SHORT).show();
+                        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                        txtResultado.setText(numero1+" / "+numero2+" = "+decimalFormat.format(resultado));
                     } catch (ArithmeticException e) {
                         Toast.makeText(MainActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
