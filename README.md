@@ -1,0 +1,22 @@
+# Calculadora_Ejercicio_Individual_4
+Calculadora pedida en el ejericicio individual 4, para el curso desarrollo de aplicaciones moviles android.
+
+La calculadora puede realizar cualquiera de las siguientes operaciones:
+
+ - Sumas.
+ - Restas.
+ - Multiplicaciones.
+ - Divisiones.
+
+El proyecto consta de tres partes principales.
+
+El layout de la aplicacion: activity_main.xml. Esta formado por un LinearLayout para la peticion de los numeros, los botones para realizar las operaciones y boton salir.
+La clase calcuadora, con los atributos numero_1 y numero_2 los cuales guardaran los valores ingresados, los metodos para realizar las operaciones y para validar el ingreso de datos
+La clase MainActivity la cual ejecuta la aplicacion, envia los valores ingresados segun el id a la clase calculadora, muestra los resultados segun la operacion seleccionada y ademas sale de la aplicacion si se oprime el boton salir.
+
+ScreenShot
+
+![image](https://github.com/MarceloJara1/Calculadora_Ejercicio_Individual_4/assets/107599490/bb2af96e-5469-4781-a564-59c8761ac2bc)
+
+
+
