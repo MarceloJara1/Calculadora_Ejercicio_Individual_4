@@ -10,9 +10,9 @@ La calculadora puede realizar cualquiera de las siguientes operaciones:
 
 El proyecto consta de tres partes principales.
 
-El layout de la aplicacion: activity_main.xml. Esta formado por un LinearLayout para la peticion de los numeros, los botones para realizar las operaciones y boton salir.
-La clase calcuadora, con los atributos numero_1 y numero_2 los cuales guardaran los valores ingresados, los metodos para realizar las operaciones y para validar el ingreso de datos
-La clase MainActivity la cual ejecuta la aplicacion, envia los valores ingresados segun el id a la clase calculadora, muestra los resultados segun la operacion seleccionada y ademas sale de la aplicacion si se oprime el boton salir.
+- El layout de la aplicacion: activity_main.xml. Esta formado por un LinearLayout para la peticion de los numeros, los botones para realizar las operaciones y boton salir.
+- La clase calcuadora, con los atributos numero_1 y numero_2 los cuales guardaran los valores ingresados, los metodos para realizar las operaciones y para validar el ingreso de datos.
+- La clase MainActivity la cual ejecuta la aplicacion, envia los valores ingresados segun el id a la clase calculadora, muestra los resultados segun la operacion seleccionada y ademas sale de la aplicacion si se oprime el boton salir.
 
 ScreenShot
 
