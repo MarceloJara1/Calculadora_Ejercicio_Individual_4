@@ -16,7 +16,7 @@ El proyecto consta de tres partes principales.
 
 ScreenShot
 
+![image](https://github.com/MarceloJara1/Calculadora_Ejercicio_Individual_4/assets/107599490/e5355ac1-30da-4fe7-b435-413358693b1f)
 
 
-![screenshot](https://github.com/MarceloJara1/Calculadora_Ejercicio_Individual_4/assets/107599490/8329b2d2-fac2-415a-909f-95c2d742d74f)
 
