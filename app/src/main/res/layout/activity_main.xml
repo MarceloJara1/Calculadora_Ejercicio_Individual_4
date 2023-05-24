@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e3e7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgCalculadora"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:contentDescription="imagen de calculadora"
+        tools:srcCompat="@drawable/img_calculadora"
+        android:background="@drawable/img_calculadora"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/inputPrimerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="Primer Número"
+        android:textColor="#5086c1"
+        android:textColorHint="#5086c1"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/inputSegundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="Segundo Número"
+        android:textColor="#5086c1"
+        android:textColorHint="#5086c1"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonSum"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_button"
+        android:text="Suma"
+        android:textColor="#ffffec"/>
+
+    <Button
+        android:id="@+id/buttonRes"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Resta"
+        android:background="@drawable/bg_button"
+        android:textColor="#ffffec"/>
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Multiplicación"
+        android:background="@drawable/bg_button"
+        android:textColor="#ffffec"/>
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="División"
+        android:background="@drawable/bg_button"
+        android:textColor="#ffffec"/>
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginEnd="20dp"
+        android:text="Salir"
+        android:background="@drawable/bg_button_salir"
+        android:textColor="#ffffec"/>
+
+</LinearLayout>
